@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className='bg-blue-600 text-white p-4'>
+    <header className='bg-pink-300 text-black p-4'>
       <nav className='container mx-auto flex justify-between items-center'>
         <Link href='/' className='text-xl font-bold'>
           Beauty & Wellness Clinic
@@ -15,8 +15,8 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href='/services' className='hover:underline'>
-              Services
+            <Link href='/treatments' className='hover:underline'>
+              Treatments
             </Link>
           </li>
         </ul>
