@@ -1,8 +1,8 @@
-// app/layout.tsx
 import type { Metadata } from 'next';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import './globals.css';
+import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: 'Beauty & Wellness Clinic',
@@ -12,6 +12,12 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='en'>
+      <Head>
+        <link
+          href='https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap'
+          rel='stylesheet'
+        />
+      </Head>
       <body className={`flex flex-col min-h-screen`}>
         <Header />
         <main className='container mx-auto px-8 py-8 flex-grow max-w-4xl'>
