@@ -8,7 +8,7 @@ const Header = () => {
         <nav className='container mx-auto flex justify-between items-center'>
           <Link
             href='/'
-            className='text-2xl font-bold'
+            className='text-2xl font-bold font-mr-bedfort'
             style={{ fontFamily: 'Mr Bedfort, cursive' }}
           >
             Beauty & Wellness Clinic

@@ -1,20 +1,15 @@
-const backWax = () => {
-  return (
-    <div>
-      <h1>Back Wax</h1>
-      <h3>Get a smooth finish with our back wax treatment.</h3>
+import { treatmentsData } from '../../treatmentsData';
 
-      <div className='my-8'>
-        <p>
-          The back wax is a popular waxing treatment that removes all hair from
-          the back, including the shoulders and lower back. The treatment is
-          popular for its long-lasting results and smooth finish. The back wax
-          is perfect for those who want to remove all hair from the back and
-          enjoy a hair-free look for weeks. /
-        </p>
-      </div>
+const FullBack = () => {
+  const { title, description } = treatmentsData.wax.back;
+  return (
+    <div className='container mx-auto p-4'>
+      <h1 className='text-3xl font-bold mb-4'>{title}</h1>
+      <p className='mb-4'>Varighed: 45 min</p>
+      <p className='mb-4'>Pris: 369,- DKK</p>
+      <p>{description}</p>
     </div>
   );
 };
 
-export default backWax;
+export default FullBack;

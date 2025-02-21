@@ -1,20 +1,12 @@
-const brazilian = () => {
+const Brazilian = () => {
   return (
-    <div>
-      <h1>Brazilian Wax</h1>
-      <h3>Get a smooth finish with our Brazilian wax treatment.</h3>
-
-      <div className='my-8'>
-        <p>
-          The Brazilian wax is a popular waxing treatment that removes all hair
-          in the pubic region, including the labia and buttocks. The treatment
-          is popular for its long-lasting results and smooth finish. The
-          Brazilian wax is perfect for those who want to remove all hair from
-          the pubic region and enjoy a hair-free look for weeks. /
-        </p>
-      </div>
+    <div className='container mx-auto p-4'>
+      <h1 className='text-3xl font-bold mb-4'>Voks af brazilian</h1>
+      <p className='mb-4'>Varighed: 45 min</p>
+      <p className='mb-4'>Pris: 350,- DKK</p>
+      <p>Beskrivelse af behandlingen...</p>
     </div>
   );
 };
 
-export default brazilian;
+export default Brazilian;
