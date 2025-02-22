@@ -1,7 +1,7 @@
 const AboutPage = () => {
   return (
     <div className='container mx-auto p-4'>
-      <h1 className='text-3xl font-bold mb-4'>Om Kropspleje og Waxbeauty</h1>
+      <h3 className='text-2xl font-bold mb-4'>Om Kropspleje og Waxbeauty</h3>
       <p className='mb-4'>
         Kropspleje og Waxbeauty er din oase i hjertet af Aarhus, hvor vi
         tilbyder et bredt udvalg af behandlinger inden for kropspleje,
@@ -15,7 +15,7 @@ const AboutPage = () => {
         behandlinger garanterer afslapning indefra og ud og hjælper dig med at
         forynge og genoplive både krop, sind og ånd.
       </p>
-      <h2 className='text-2xl font-bold mb-4'>Om Watsana</h2>
+      <h3 className='text-2xl font-bold mb-4'>Om Watsana</h3>
       <p className='mb-4'>
         Hos Kropspleje og Waxbeauty bliver du mødt af Watsana, som driver
         skønhedsklinikken. Watsana er uddannet inden for kropspleje og

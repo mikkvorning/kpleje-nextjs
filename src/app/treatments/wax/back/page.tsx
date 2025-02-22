@@ -1,15 +1,8 @@
+import TreatmentPage from '@/app/components/TreatmentPage';
 import { treatmentsData } from '../../treatmentsData';
 
-const FullBack = () => {
-  const { title, description } = treatmentsData.wax.back;
-  return (
-    <div className='container mx-auto p-4'>
-      <h1 className='text-3xl font-bold mb-4'>{title}</h1>
-      <p className='mb-4'>Varighed: 45 min</p>
-      <p className='mb-4'>Pris: 369,- DKK</p>
-      <p>{description}</p>
-    </div>
-  );
-};
+const FullBack = () => (
+  <TreatmentPage {...treatmentsData.wax.find((t) => t.id === 'back')!} />
+);
 
 export default FullBack;

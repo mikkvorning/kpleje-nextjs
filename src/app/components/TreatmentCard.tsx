@@ -13,7 +13,7 @@ const TreatmentCard: React.FC<Treatment> = ({
 }) => {
   return (
     <Link href={link} legacyBehavior>
-      <a className='border rounded-lg shadow-md p-4 flex flex-col h-full'>
+      <a className='border rounded-lg shadow-md p-4 flex flex-col tramnsition duration-100 ease-in-out transform hover:scale-105 hover:shadow-xl'>
         {image && image !== '' ? (
           <Image
             src={image}
@@ -24,14 +24,21 @@ const TreatmentCard: React.FC<Treatment> = ({
           />
         ) : (
           <div className='w-full h-48 bg-gray-300 rounded-lg flex items-center justify-center'>
-            <span className='text-gray-500'>No Image Available</span>
+            <span className='text-gray-500 flex items-center justify-center'>
+              No Image Available
+            </span>
           </div>
         )}
-        <div className='p-4 flex flex-col flex-grow'>
-          <h2 className='text-xl font-bold mb-2'>{title}</h2>
-          <p className='text-gray-600 mb-2'>{duration}</p>
-          <p className='text-gray-800 font-semibold mb-2'>{price}</p>
-          <p className='text-gray-600'>{description}</p>
+        <div className='p-4 flex flex-col flex-grow max-h-[300px] overflow-hidden'>
+          <h2 className='text-md font-bold mb-2'>{title}</h2>
+          <div className='flex gap-2'>
+            <p className='mb-2'>{duration}</p>
+            <p className='font-semibold mb-2'>{price}</p>
+          </div>
+
+          <p className='line-clamp-[3] overflow-hidden text-ellipsis'>
+            {description}
+          </p>
         </div>
       </a>
     </Link>

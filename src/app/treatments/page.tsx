@@ -9,15 +9,16 @@ const treatments = () => {
 
   return (
     <div className='container mx-auto px-4'>
-      <h1 className='text-3xl font-bold my-4'>Treatments</h1>
+      <h1 className='text-2xl font-bold my-4'>Treatments</h1>
       <h3 className='text-md my-4'>
         Here is a list of all our treatments and services.
       </h3>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
         {data.map((treatment, index) => (
           <TreatmentCard
             key={index}
+            id={treatment.id}
             title={treatment.title}
             image={treatment.image}
             duration={treatment.duration}
